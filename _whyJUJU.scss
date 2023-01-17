@@ -1,0 +1,338 @@
+@use "./reset" as *;
+
+.whyJUJU {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+  .container {
+    .whyHeader {
+      font-size: 20px;
+      text-align: center;
+      line-height: 140%;
+      color: #00042d;
+      margin-bottom: 22px;
+
+      background: url(./Images/image\ 24Why\ JUJU.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 108.9999771118168px 120px;
+    }
+    .whyText {
+      font-size: 28px;
+      line-height: 44px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .why1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+      .smsText {
+        background-color: rgba(0, 21, 236, 0.05);
+        width: 560px;
+        height: 410px;
+        padding: 50px 30px;
+        margin-bottom: 20px;
+        justify-content: left;
+        justify-content: space-around;
+        .smsIcon {
+          margin: 50px;
+        }
+        .readMoreButton {
+          width: 106px;
+          height: 40px;
+          border: 1px solid #00042d;
+          border-radius: 4px;
+          color: #00042d;
+          background: none;
+        }
+        h3 {
+          font-size: 22px;
+          color: #00042d;
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .why2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+      .whatsAppText {
+        background: rgba(229, 13, 207, 0.05);
+        width: 560px;
+        height: 410px;
+        padding: 50px 30px;
+        margin-bottom: 20px;
+        justify-content: left;
+        justify-content: space-around;
+        .smsIcon {
+          margin: 50px;
+        }
+        .readMoreButton {
+          width: 106px;
+          height: 40px;
+          border: 1px solid #00042d;
+          border-radius: 4px;
+          color: #00042d;
+          background: none;
+        }
+        h3 {
+          font-size: 22px;
+          color: #00042d;
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .why3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+      .transactionalText {
+        background: rgba(2, 236, 251, 0.05);
+        width: 560px;
+        height: 410px;
+        padding: 50px 30px;
+        margin-bottom: 20px;
+        justify-content: left;
+        .readMoreButton {
+          width: 106px;
+          height: 40px;
+          border: 1px solid #00042d;
+          border-radius: 4px;
+          color: #00042d;
+          background: none;
+        }
+        h3 {
+          font-size: 22px;
+          color: #00042d;
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .why4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+      .voiceText {
+        background: rgba(251, 77, 2, 0.05);
+        width: 560px;
+        height: 410px;
+        padding: 50px 30px;
+        margin-bottom: 20px;
+        justify-content: left;
+        .readMoreButton {
+          width: 106px;
+          height: 40px;
+          border: 1px solid #00042d;
+          border-radius: 4px;
+          color: #00042d;
+          background: none;
+        }
+        h3 {
+          font-size: 22px;
+          color: #00042d;
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+.transactionSms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
+  .transactionText {
+    h3 {
+      font-size: 40px;
+      // line-height: 52px;
+      text-align: center;
+
+      background: url(./Images/19850\ 2purple.svg);
+      background-repeat: no-repeat;
+      background-position-x: 113%;
+    }
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+}
+
+.transactionDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 150px;
+  .transactionParagraph1 {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
+  .transactionParagraph2 {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
+}
+
+.transactionalEmail {
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin-bottom: 150px;
+  .transactionalEmailHeader {
+    font-size: 40px;
+    line-height: 62px;
+    text-align: center;
+
+    background: url(./Images/image\ 42green.svg);
+    background-repeat: no-repeat;
+    background-position-x: 35%;
+    background-size: 250px 55.69px;
+  }
+  .transactionalEmailParagraph {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    // margin-bottom: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    .dualCheck1 {
+      justify-content: center;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+        p {
+          font-size: 18px;
+          line-height: 28px;
+          text-align: left;
+        }
+      }
+    }
+
+    .dualCheck2 {
+      justify-content: center;
+      padding: 40px;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+        p {
+          font-size: 18px;
+          line-height: 28px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.powerOfProgrammability {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
+  .powerOfProgrammabilityText {
+    h3 {
+      color: #00042d;
+      font-size: 40px;
+      // line-height: 52px;
+      text-align: center;
+
+      background: url(./Images/19850\ 2Purple2.svg);
+      background-size: 310px 55.49px;
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+    }
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+}
+
+.powerOfProgrammabilityDescription {
+  margin-bottom: 150px;
+  .description1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    .descriptionHeader1 {
+      font-size: 28px;
+      line-height: 44px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .descriptionParagraph1 {
+      font-size: 20px;
+      line-height: 31px;
+      text-align: left;
+    }
+  }
+
+  .description2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    .descriptionHeader2 {
+      font-size: 28px;
+      line-height: 44px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .descriptionParagraph2 {
+      font-size: 20px;
+      line-height: 31px;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@use "./reset" as *;
+
+.faqHeader {
+  font-size: 40px;
+  line-height: 52px;
+  color: #00042d;
+  margin-bottom: 22px;
+  text-align: center;
+
+  background: url(./Images/gold-brush-stroke-background_53876-81624\ 1FAQ_yellowbackground.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-y: 0%;
+}
+
+.FAQ {
+  margin-bottom: 150px;
+}
+
+.faqcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  .faqText {
+    // display: inline-block;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      justify-content: space-between;
+
+      width: 600px;
+      height: 60px;
+
+      margin: 25px;
+      padding: 15px;
+      border-radius: 4px;
+      border: 1px solid #00042d4d;
+      p {
+        font-size: 16px;
+        line-height: 21px;
+        text-align: left;
+      }
+    }
+  }
+}

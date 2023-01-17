@@ -1,0 +1,225 @@
+@use "./reset" as *;
+
+.advantage {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  .advantagesText {
+    font-size: 42px;
+    line-height: 140%;
+    color: #00042d;
+    margin-bottom: 22px;
+
+    background: url(./Images/light-brown-brush-stroke-background_53876-81625\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-y: 0%;
+  }
+
+  .advantagesParagraph {
+    font-size: 20px;
+    line-height: 100%;
+    color: #00042d 0.8;
+  }
+}
+
+.advantagesCard {
+  margin-bottom: 150px;
+  .containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    .card1 {
+      width: 380px;
+      height: 250px;
+      padding: 30px;
+      margin-bottom: 20px;
+      justify-content: left;
+      justify-content: space-evenly;
+
+      background: #ffffff;
+      box-shadow: 0px 4px 6px rgba(171, 171, 171, 0.1);
+      border-radius: 8px;
+      .deliveryIcon {
+        align-self: auto;
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        left: 4%;
+        top: 6%;
+
+        background: url(./Images/Ellipse\ 330.png);
+        background-position: 50%, 50%;
+        // background-size: 50px, 50px;
+      }
+      h3 {
+        font-size: 22px;
+        color: #00042d;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .card2 {
+      width: 380px;
+      height: 250px;
+      padding: 30px;
+      justify-content: left;
+      justify-content: space-evenly;
+
+      background: #ffffff;
+      box-shadow: 0px 4px 6px rgba(171, 171, 171, 0.1);
+      border-radius: 8px;
+      .real-timeIcon {
+        align-self: auto;
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        margin-bottom: 20px;
+        left: 4%;
+        top: 6%;
+
+        background: url(./Images/Ellipse\ 330.png);
+        background-position: 50%, 50%;
+        // background-size: 50px, 50px;
+      }
+      h3 {
+        font-size: 22px;
+        color: #00042d;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .card3 {
+      width: 380px;
+      height: 250px;
+      padding: 30px;
+      justify-content: left;
+      justify-content: space-evenly;
+
+      background: #ffffff;
+      box-shadow: 0px 4px 6px rgba(171, 171, 171, 0.1);
+      border-radius: 8px;
+      .restrictionIcon {
+        align-self: auto;
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        margin-bottom: 20px;
+        left: 4%;
+        top: 6%;
+
+        background: url(./Images/Ellipse\ 330.png);
+        background-position: 50%, 50%;
+        // background-size: 50px, 50px;
+      }
+      h3 {
+        font-size: 22px;
+        color: #00042d;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .card4 {
+      width: 380px;
+      height: 250px;
+      padding: 30px;
+      justify-content: left;
+      justify-content: space-evenly;
+
+      background: #ffffff;
+      box-shadow: 0px 4px 6px rgba(171, 171, 171, 0.1);
+      border-radius: 8px;
+      .apiIcon {
+        align-self: auto;
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        margin-bottom: 20px;
+        left: 4%;
+        top: 6%;
+
+        background: url(./Images/Ellipse\ 330.png);
+        background-position: 50%, 50%;
+        // background-size: 50px, 50px;
+      }
+      h3 {
+        font-size: 22px;
+        color: #00042d;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .card5 {
+      width: 380px;
+      height: 250px;
+      padding: 30px;
+      justify-content: left;
+      justify-content: space-evenly;
+
+      background: #ffffff;
+      box-shadow: 0px 4px 6px rgba(171, 171, 171, 0.1);
+      border-radius: 8px;
+      .templatesIcon {
+        align-self: auto;
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        margin-bottom: 20px;
+        left: 4%;
+        top: 6%;
+
+        background: url(./Images/Ellipse\ 330.png);
+        background-position: 50%, 50%;
+        // background-size: 50px, 50px;
+      }
+      h3 {
+        font-size: 22px;
+        color: #00042d;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .card6 {
+      width: 380px;
+      height: 250px;
+      padding: 30px;
+      justify-content: left;
+      justify-content: space-evenly;
+
+      background: #ffffff;
+      box-shadow: 0px 4px 6px rgba(171, 171, 171, 0.1);
+      border-radius: 8px;
+      .userIcon {
+        align-self: auto;
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        margin-bottom: 20px;
+        left: 4%;
+        top: 6%;
+
+        background: url(./Images/Ellipse\ 330.png);
+        background-position: 50%, 50%;
+        // background-size: 50px, 50px;
+      }
+      h3 {
+        font-size: 22px;
+        color: #00042d;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
