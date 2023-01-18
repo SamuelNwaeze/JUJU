@@ -19,13 +19,16 @@
   gap: 100px;
   .navList {
     display: flex;
-    text-align: center;
+    // text-align: center;
     justify-content: space-evenly;
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: 100px;
     ul {
       font-size: 14px;
       line-height: 16px;
-      gap: 35px;
-
+      gap: 40px;
+      padding: 10px;
       .downwardScroll {
         height: 10.000000000000009px;
         width: 6.000000000000005px;
@@ -34,12 +37,15 @@
   }
 }
 
+.buttons {
+  display: flex;
+  right: 20%;
+  gap: 20px;
+}
 .loginButton {
   width: 75.5px;
   height: 40px;
-  left: 1144.5px;
-  top: 20px;
-
+  background: none;
   border: 1px solid rgba(0, 4, 45, 0.8);
   border-radius: 4px;
 }
@@ -48,8 +54,6 @@
   // position: fixed;
   width: 100px;
   height: 40px;
-  left: 1240px;
-  top: 20px;
   color: white;
   background: #00042d;
   border: none;

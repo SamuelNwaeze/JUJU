@@ -18,16 +18,16 @@ body {
     align-items: left;
   }
   .heroText {
-    width: 493px;
-    height: 193px;
+    // width: 493px;
+    // height: 193px;
     font-size: 42px;
     line-height: 140%;
     color: #00042d;
 
     background: url(./Images/19855\ 1.png);
     background-repeat: no-repeat;
-    background-position-y: 40%;
-    background-size: 450px, 57.81px;
+    background-position-y: 50%;
+    background-size: 500px, 57.81px;
     // margin-bottom: 10px;
   }
   .heroParagraph {
@@ -51,6 +51,14 @@ body {
     height: 50px;
     right: 4vw;
     top: 88vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+  }
+
+  .scrollButton.active {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .heroCircle {
