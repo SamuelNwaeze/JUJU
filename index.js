@@ -15,3 +15,10 @@ toTop.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const toggleButton = document.getElementsByClassName("toggler-button");
+const navLeft = document.getElementsByClassName("navLeft");
+
+toggleButton.addEventListener("click", () => {
+  navLeft.toggle("active");
+});

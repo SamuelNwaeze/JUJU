@@ -18,6 +18,23 @@
   box-shadow: 0 0 3px #ccc;
 }
 
+.toggler-button {
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 26px;
+  align-self: center;
+}
+.toggler-button .bar {
+  background-color: #00042d;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+}
+
 .navLeft {
   display: flex;
   justify-content: center;
@@ -66,6 +83,47 @@
   border-radius: 4px;
 }
 
+@media (max-width: 720px) {
+  .toggler-button {
+    position: absolute;
+    display: flex;
+    top: 1rem;
+    right: 2rem;
+    align-self: center;
+  }
+  .navLeft {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  .navLeft .navList {
+    margin: 0px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .navLeft.active {
+    display: flex;
+  }
+  .nav {
+    align-content: left;
+    padding: 5px;
+  }
+  .nav .jujuLogo {
+    align-content: left;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
 body {
   background: #fdfdfd;
 }
@@ -785,5 +843,4 @@ body {
 .footerContainer .footer .number {
   color: white;
   margin-bottom: 20px;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
