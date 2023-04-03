@@ -16,9 +16,9 @@ toTop.addEventListener("click", () => {
   });
 });
 
-const toggleButton = document.getElementsByClassName("toggler-button");
-const navLeft = document.getElementsByClassName("navLeft");
+const toggleButton = document.getElementsByClassName("toggler-button")[0];
+const navLeft = document.getElementsByClassName("navLeft")[0];
 
 toggleButton.addEventListener("click", () => {
-  navLeft.toggle("active");
+  navLeft.classList.toggle("active");
 });

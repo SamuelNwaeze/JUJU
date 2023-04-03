@@ -7,9 +7,11 @@
   margin-bottom: 50px;
 
   .advantagesText {
-    font-size: 42px;
+    width: 25rem;
+    font-size: 2rem;
     line-height: 140%;
     color: #00042d;
+    text-align: center;
     margin-bottom: 22px;
 
     background: url(./Images/light-brown-brush-stroke-background_53876-81625\ 1.png);
@@ -20,9 +22,14 @@
   }
 
   .advantagesParagraph {
-    font-size: 20px;
-    line-height: 100%;
+    width: 23rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
     color: #00042d 0.8;
+    margin-bottom: 20px;
   }
 }
 
@@ -222,4 +229,38 @@
       }
     }
   }
+}
+
+@media (max-width: 720px) {
+  .advantage {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .advantagesText {
+      font-size: 1.5rem;
+      line-height: 140%;
+      color: #00042d;
+      margin-bottom: 5px;
+
+      background: url(./Images/light-brown-brush-stroke-background_53876-81625\ 1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 250px, 57.81px;
+      background-position-y: 0%;
+    }
+
+    .advantagesParagraph {
+      font-size: 1rem;
+      // line-height: 100%;
+      color: #00042d 0.8;
+    }
+  }
+}
+
+.advantagesCard {
+  margin-bottom: 60px;
+  margin-left: 12px;
+  margin-right: 12px;
 }

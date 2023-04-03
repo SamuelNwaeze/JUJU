@@ -6,7 +6,7 @@
   margin-bottom: 150px;
   .container {
     .whyHeader {
-      font-size: 20px;
+      font-size: 2rem;
       text-align: center;
       line-height: 140%;
       color: #00042d;
@@ -15,20 +15,21 @@
       background: url(./Images/image\ 24Why\ JUJU.svg);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 108.9999771118168px 120px;
+      background-size: 13rem 120px;
     }
     .whyText {
-      font-size: 28px;
-      line-height: 44px;
       text-align: center;
       margin-bottom: 40px;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      color: #00042d 0.8;
     }
 
     .why1 {
       display: flex;
       justify-content: center;
       align-items: center;
-      justify-content: space-evenly;
+      // justify-content: space-evenly;
       .smsText {
         background-color: rgba(0, 21, 236, 0.05);
         width: 560px;
@@ -333,6 +334,155 @@
       font-size: 20px;
       line-height: 31px;
       text-align: left;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .whyText {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2px;
+    color: #00042d 0.8;
+    margin-bottom: 10px;
+  }
+
+  /*
+  .why {
+    display: flex;
+    flex-direction: column;
+    img {
+      display: none;
+    }
+  }
+  */
+  .why {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    .Image {
+      display: none;
+    }
+    .smsText {
+      background-color: rgba(0, 21, 236, 0.05);
+      width: 100%;
+      height: 350px;
+      padding: 20px 20px;
+      margin-bottom: 20px;
+      justify-content: left;
+      .smsIcon {
+        margin: 0.1rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+        color: #00042d;
+        margin-bottom: 1.3rem;
+        margin-top: 1.3rem;
+      }
+      p {
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 140%;
+        color: #00042d;
+        margin-bottom: 22px;
+      }
+    }
+
+    .whatsAppText {
+      background: rgba(229, 13, 207, 0.05);
+      width: 100%;
+      height: 350px;
+      padding: 20px 20px;
+      margin-bottom: 20px;
+      justify-content: left;
+      .whatsAppIcon {
+        margin: 0.08rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+        color: #00042d;
+        margin-bottom: 1.3rem;
+        margin-top: 1.3rem;
+      }
+      p {
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 140%;
+        color: #00042d;
+        margin-bottom: 22px;
+      }
+    }
+
+    .transactionalText {
+      background: rgba(2, 236, 251, 0.05);
+      width: 100%;
+      height: 350px;
+      padding: 20px 20px;
+      margin-bottom: 20px;
+      justify-content: left;
+      .transactionIcon {
+        margin: 0.08rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+        color: #00042d;
+        margin-bottom: 1.3rem;
+        margin-top: 1.3rem;
+      }
+      p {
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 140%;
+        color: #00042d;
+        margin-bottom: 22px;
+      }
+    }
+
+    .voiceText {
+      background: rgba(251, 77, 2, 0.05);
+      width: 100%;
+      height: 350px;
+      padding: 20px 20px;
+      margin-bottom: 20px;
+      justify-content: left;
+      .voiceIcon {
+        margin: 0.08rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+        color: #00042d;
+        margin-bottom: 1.3rem;
+        margin-top: 1.3rem;
+      }
+      p {
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 140%;
+        color: #00042d;
+        margin-bottom: 22px;
+      }
+    }
+
+    .readMoreButton {
+      width: 106px;
+      height: 40px;
+      border: 1px solid #00042d;
+      border-radius: 4px;
+      color: #00042d;
+      background: none;
+    }
+    h3 {
+      font-size: 22px;
+      color: #00042d;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 30px;
     }
   }
 }

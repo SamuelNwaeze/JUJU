@@ -7,12 +7,10 @@
   @import url(https://fonts.google.com/specimen/Mulish?query=mulish);
 }
 
-.nav {
-  position: relative;
+nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-content: center;
   padding: 10px;
   background-color: white;
   box-shadow: 0 0 3px #ccc;
@@ -40,7 +38,6 @@
   justify-content: center;
   justify-content: space-between;
   align-items: right;
-  gap: 100px;
 }
 .navLeft .navList {
   display: flex;
@@ -59,6 +56,9 @@
   height: 10px;
   width: 6px;
 }
+.navLeft .navList ul ul.hover {
+  background-color: #00042d;
+}
 
 .buttons {
   display: flex;
@@ -74,6 +74,11 @@
   border-radius: 4px;
 }
 
+.loginButton:hover {
+  background-color: #00042d;
+  color: #ccc;
+}
+
 .getStartedButton {
   width: 100px;
   height: 40px;
@@ -83,6 +88,11 @@
   border-radius: 4px;
 }
 
+.getStartedButton:hover {
+  background-color: #ccc;
+  color: #00042d;
+}
+
 @media (max-width: 720px) {
   .toggler-button {
     position: absolute;
@@ -90,6 +100,12 @@
     top: 1rem;
     right: 2rem;
     align-self: center;
+  }
+  .jujuLogo {
+    position: inherit;
+    display: flex;
+    top: 1rem;
+    left: 2rem;
   }
   .navLeft {
     display: none;
@@ -104,10 +120,10 @@
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 0.003rem;
   }
   .navLeft.active {
-    display: flex;
+    display: block;
   }
   .nav {
     align-content: left;
@@ -122,6 +138,29 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
+  }
+  .loginButton {
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: 1px solid rgba(0, 4, 45, 0.8);
+    border-radius: 4px;
+  }
+  .loginButton:hover {
+    background-color: #00042d;
+    color: #ccc;
+  }
+  .getStartedButton {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background: #00042d;
+    border: none;
+    border-radius: 4px;
+  }
+  .getStartedButton:hover {
+    background-color: #ccc;
+    color: #00042d;
   }
 }
 body {
@@ -139,10 +178,12 @@ body {
   width: 633.73px;
   height: 363.28px;
 }
-.hero .heroWordings {
+.hero .heroWords {
   align-items: left;
+  justify-content: space-evenly;
 }
 .hero .heroText {
+  width: 35rem;
   font-size: 42px;
   line-height: 140%;
   color: #00042d;
@@ -152,12 +193,14 @@ body {
   background-size: 500px, 57.81px;
 }
 .hero .heroParagraph {
-  width: 568px;
-  height: 51px;
+  width: 38rem;
+  margin-top: 10px;
   font-size: 16px;
-  line-height: 156%;
+  line-height: 140%;
+  margin-top: 10px;
+  margin-bottom: 25px;
   color: #00042d 0.8;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .hero .heroGetStartedButton {
   width: 212px;
@@ -207,6 +250,72 @@ body {
   top: 93vh;
 }
 
+@media (max-width: 720px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .hero .heroImage {
+    display: none;
+  }
+  .hero .heroWordings {
+    align-items: center;
+    text-align: center;
+  }
+  .hero .heroText {
+    width: 25rem;
+    font-size: 2rem;
+    line-height: 140%;
+    color: #00042d;
+    text-align: center;
+    background: url(./Images/19855\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-size: 12em, 0.5rem;
+    margin-bottom: 20px;
+  }
+  .hero .heroParagraph {
+    width: 23rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #00042d 0.8;
+    margin-bottom: 20px;
+  }
+  .hero .heroGetStartedButton {
+    align-self: center;
+    width: 212px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #00042d;
+  }
+  .hero .scrollButton {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    right: 4vw;
+    top: 88vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+  }
+  .hero .scrollButton.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
 .advantage {
   justify-content: center;
   text-align: center;
@@ -214,9 +323,11 @@ body {
   margin-bottom: 50px;
 }
 .advantage .advantagesText {
-  font-size: 42px;
+  width: 25rem;
+  font-size: 2rem;
   line-height: 140%;
   color: #00042d;
+  text-align: center;
   margin-bottom: 22px;
   background: url(./Images/light-brown-brush-stroke-background_53876-81625\ 1.png);
   background-position: center;
@@ -225,9 +336,14 @@ body {
   background-position-y: 0%;
 }
 .advantage .advantagesParagraph {
-  font-size: 20px;
-  line-height: 100%;
+  width: 23rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
   color: #00042d 0.8;
+  margin-bottom: 20px;
 }
 
 .advantagesCard {
@@ -409,13 +525,42 @@ body {
   font-size: 16px;
 }
 
+@media (max-width: 720px) {
+  .advantage {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .advantage .advantagesText {
+    font-size: 1.5rem;
+    line-height: 140%;
+    color: #00042d;
+    margin-bottom: 5px;
+    background: url(./Images/light-brown-brush-stroke-background_53876-81625\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px, 57.81px;
+    background-position-y: 0%;
+  }
+  .advantage .advantagesParagraph {
+    font-size: 1rem;
+    color: #00042d 0.8;
+  }
+}
+.advantagesCard {
+  margin-bottom: 60px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .whyJUJU {
   justify-content: center;
   align-items: center;
   margin-bottom: 150px;
 }
 .whyJUJU .container .whyHeader {
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   line-height: 140%;
   color: #00042d;
@@ -423,19 +568,19 @@ body {
   background: url(./Images/image\ 24Why\ JUJU.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 108.9999771118px 120px;
+  background-size: 13rem 120px;
 }
 .whyJUJU .container .whyText {
-  font-size: 28px;
-  line-height: 44px;
   text-align: center;
   margin-bottom: 40px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #00042d 0.8;
 }
 .whyJUJU .container .why1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
 }
 .whyJUJU .container .why1 .smsText {
   background-color: rgba(0, 21, 236, 0.05);
@@ -725,6 +870,149 @@ body {
   text-align: left;
 }
 
+@media (max-width: 720px) {
+  .whyText {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2px;
+    color: #00042d 0.8;
+    margin-bottom: 10px;
+  }
+  /*
+  .why {
+    display: flex;
+    flex-direction: column;
+    img {
+      display: none;
+    }
+  }
+  */
+  .why {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .why .Image {
+    display: none;
+  }
+  .why .smsText {
+    background-color: rgba(0, 21, 236, 0.05);
+    width: 100%;
+    height: 350px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+  .why .smsText .smsIcon {
+    margin: 0.1rem;
+  }
+  .why .smsText h3 {
+    font-size: 1.3rem;
+    color: #00042d;
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+  }
+  .why .smsText p {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 140%;
+    color: #00042d;
+    margin-bottom: 22px;
+  }
+  .why .whatsAppText {
+    background: rgba(229, 13, 207, 0.05);
+    width: 100%;
+    height: 350px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+  .why .whatsAppText .whatsAppIcon {
+    margin: 0.08rem;
+  }
+  .why .whatsAppText h3 {
+    font-size: 1.3rem;
+    color: #00042d;
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+  }
+  .why .whatsAppText p {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 140%;
+    color: #00042d;
+    margin-bottom: 22px;
+  }
+  .why .transactionalText {
+    background: rgba(2, 236, 251, 0.05);
+    width: 100%;
+    height: 350px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+  .why .transactionalText .transactionIcon {
+    margin: 0.08rem;
+  }
+  .why .transactionalText h3 {
+    font-size: 1.3rem;
+    color: #00042d;
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+  }
+  .why .transactionalText p {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 140%;
+    color: #00042d;
+    margin-bottom: 22px;
+  }
+  .why .voiceText {
+    background: rgba(251, 77, 2, 0.05);
+    width: 100%;
+    height: 350px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+  .why .voiceText .voiceIcon {
+    margin: 0.08rem;
+  }
+  .why .voiceText h3 {
+    font-size: 1.3rem;
+    color: #00042d;
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+  }
+  .why .voiceText p {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 140%;
+    color: #00042d;
+    margin-bottom: 22px;
+  }
+  .why .readMoreButton {
+    width: 106px;
+    height: 40px;
+    border: 1px solid #00042d;
+    border-radius: 4px;
+    color: #00042d;
+    background: none;
+  }
+  .why h3 {
+    font-size: 22px;
+    color: #00042d;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .why p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
 .testimonialsHeader {
   font-size: 14px;
   line-height: 22px;
@@ -843,4 +1131,5 @@ body {
 .footerContainer .footer .number {
   color: white;
   margin-bottom: 20px;
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */
