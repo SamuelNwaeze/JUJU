@@ -301,7 +301,7 @@ body {
     width: 10%;
     height: 6%;
     right: 4vw;
-    top: 88vh;
+    top: 80vh;
     opacity: 0;
     pointer-events: none;
     transition: all 1s;
