@@ -19,7 +19,6 @@ window.addEventListener("scroll", () => {
 });
 
 //Scroll to the top button functionality
-
 const toTop = document.querySelector(".scrollButton");
 
 window.addEventListener("scroll", () => {
@@ -28,4 +27,12 @@ window.addEventListener("scroll", () => {
   } else {
     toTop.classList.remove("active");
   }
+});
+
+toTop.addEventListener("click", () => {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 });
