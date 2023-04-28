@@ -46,3 +46,43 @@
     }
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .FAQ {
+    margin-bottom: 70px;
+  }
+
+  .fagImage {
+    width: 95%;
+  }
+
+  .faqcontainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    .faqText {
+      // display: inline-block;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        justify-content: space-between;
+
+        width: 90%;
+        height: 60px;
+
+        margin: 1rem;
+        padding: 7px;
+        border-radius: 4px;
+        border: 1px solid #00042d4d;
+        p {
+          font-size: 16px;
+          line-height: 21px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

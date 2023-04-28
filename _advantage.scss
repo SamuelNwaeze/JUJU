@@ -7,7 +7,7 @@
   margin-bottom: 50px;
 
   .advantagesText {
-    width: 25rem;
+    // width: 25rem;
     font-size: 2rem;
     line-height: 140%;
     color: #00042d;
@@ -22,14 +22,13 @@
   }
 
   .advantagesParagraph {
-    width: 23rem;
+    // width: 40rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.3rem;
     margin-top: 5px;
-    margin-bottom: 5px;
     color: #00042d 0.8;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -231,7 +230,7 @@
   }
 }
 
-@media (max-width: 720px) {
+@media only screen and (max-width: 992px) {
   .advantage {
     justify-content: center;
     text-align: center;

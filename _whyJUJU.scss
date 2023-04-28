@@ -29,18 +29,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      // justify-content: space-evenly;
+      justify-content: space-evenly;
       .smsText {
         background-color: rgba(0, 21, 236, 0.05);
-        width: 560px;
-        height: 410px;
-        padding: 50px 30px;
-        margin-bottom: 20px;
+        width: 50%;
+        height: 25.63rem;
+        padding: 2rem 1.9rem;
+        margin: 20px;
         justify-content: left;
         justify-content: space-around;
-        .smsIcon {
-          margin: 50px;
-        }
         .readMoreButton {
           width: 106px;
           height: 40px;
@@ -52,12 +49,12 @@
         h3 {
           font-size: 22px;
           color: #00042d;
-          margin-bottom: 30px;
-          margin-top: 30px;
+          margin-bottom: 1.88rem;
+          margin-top: 1.88rem;
         }
         p {
           font-size: 16px;
-          margin-bottom: 30px;
+          margin-bottom: 1.88rem;
         }
       }
     }
@@ -69,15 +66,12 @@
       justify-content: space-evenly;
       .whatsAppText {
         background: rgba(229, 13, 207, 0.05);
-        width: 560px;
-        height: 410px;
-        padding: 50px 30px;
-        margin-bottom: 20px;
+        width: 50%;
+        height: 25.63rem;
+        padding: 2rem 1.9rem;
+        margin: 20px;
         justify-content: left;
         justify-content: space-around;
-        .smsIcon {
-          margin: 50px;
-        }
         .readMoreButton {
           width: 106px;
           height: 40px;
@@ -106,10 +100,10 @@
       justify-content: space-evenly;
       .transactionalText {
         background: rgba(2, 236, 251, 0.05);
-        width: 560px;
-        height: 410px;
-        padding: 50px 30px;
-        margin-bottom: 20px;
+        width: 50%;
+        height: 25.63rem;
+        padding: 2rem 1.9rem;
+        margin: 20px;
         justify-content: left;
         .readMoreButton {
           width: 106px;
@@ -139,10 +133,10 @@
       justify-content: space-evenly;
       .voiceText {
         background: rgba(251, 77, 2, 0.05);
-        width: 560px;
-        height: 410px;
-        padding: 50px 30px;
-        margin-bottom: 20px;
+        width: 50%;
+        height: 24rem;
+        padding: 3rem 1.9rem;
+        margin: 20px;
         justify-content: left;
         .readMoreButton {
           width: 106px;
@@ -199,7 +193,7 @@
   margin-bottom: 150px;
   .transactionParagraph1 {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 1.13rem;
     line-height: 28px;
     text-align: left;
   }
@@ -230,7 +224,7 @@
     font-size: 18px;
     line-height: 28px;
     text-align: center;
-    // margin-bottom: 20px;
+    justify-content: space-around;
   }
 
   .container {
@@ -334,155 +328,6 @@
       font-size: 20px;
       line-height: 31px;
       text-align: left;
-    }
-  }
-}
-
-@media (max-width: 720px) {
-  .whyText {
-    font-size: 2rem;
-    text-align: center;
-    line-height: 2px;
-    color: #00042d 0.8;
-    margin-bottom: 10px;
-  }
-
-  /*
-  .why {
-    display: flex;
-    flex-direction: column;
-    img {
-      display: none;
-    }
-  }
-  */
-  .why {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    margin-left: 10px;
-    .Image {
-      display: none;
-    }
-    .smsText {
-      background-color: rgba(0, 21, 236, 0.05);
-      width: 100%;
-      height: 350px;
-      padding: 20px 20px;
-      margin-bottom: 20px;
-      justify-content: left;
-      .smsIcon {
-        margin: 0.1rem;
-      }
-      h3 {
-        font-size: 1.3rem;
-        color: #00042d;
-        margin-bottom: 1.3rem;
-        margin-top: 1.3rem;
-      }
-      p {
-        width: 100%;
-        font-size: 0.9rem;
-        line-height: 140%;
-        color: #00042d;
-        margin-bottom: 22px;
-      }
-    }
-
-    .whatsAppText {
-      background: rgba(229, 13, 207, 0.05);
-      width: 100%;
-      height: 350px;
-      padding: 20px 20px;
-      margin-bottom: 20px;
-      justify-content: left;
-      .whatsAppIcon {
-        margin: 0.08rem;
-      }
-      h3 {
-        font-size: 1.3rem;
-        color: #00042d;
-        margin-bottom: 1.3rem;
-        margin-top: 1.3rem;
-      }
-      p {
-        width: 100%;
-        font-size: 0.9rem;
-        line-height: 140%;
-        color: #00042d;
-        margin-bottom: 22px;
-      }
-    }
-
-    .transactionalText {
-      background: rgba(2, 236, 251, 0.05);
-      width: 100%;
-      height: 350px;
-      padding: 20px 20px;
-      margin-bottom: 20px;
-      justify-content: left;
-      .transactionIcon {
-        margin: 0.08rem;
-      }
-      h3 {
-        font-size: 1.3rem;
-        color: #00042d;
-        margin-bottom: 1.3rem;
-        margin-top: 1.3rem;
-      }
-      p {
-        width: 100%;
-        font-size: 0.9rem;
-        line-height: 140%;
-        color: #00042d;
-        margin-bottom: 22px;
-      }
-    }
-
-    .voiceText {
-      background: rgba(251, 77, 2, 0.05);
-      width: 100%;
-      height: 350px;
-      padding: 20px 20px;
-      margin-bottom: 20px;
-      justify-content: left;
-      .voiceIcon {
-        margin: 0.08rem;
-      }
-      h3 {
-        font-size: 1.3rem;
-        color: #00042d;
-        margin-bottom: 1.3rem;
-        margin-top: 1.3rem;
-      }
-      p {
-        width: 100%;
-        font-size: 0.9rem;
-        line-height: 140%;
-        color: #00042d;
-        margin-bottom: 22px;
-      }
-    }
-
-    .readMoreButton {
-      width: 106px;
-      height: 40px;
-      border: 1px solid #00042d;
-      border-radius: 4px;
-      color: #00042d;
-      background: none;
-    }
-    h3 {
-      font-size: 22px;
-      color: #00042d;
-      margin-bottom: 30px;
-      margin-top: 30px;
-    }
-    p {
-      font-size: 16px;
-      margin-bottom: 30px;
     }
   }
 }
